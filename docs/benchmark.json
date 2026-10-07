@@ -1,0 +1,12 @@
+{
+  "questions": 200,
+  "composition": "199 public questions plus a repeat with a new ID",
+  "wall_seconds": 0.8233102880001297,
+  "indexing_seconds": 5.92,
+  "passages": 25298,
+  "contributing_files": 1847,
+  "discovered_files": 1969,
+  "real_generation_tested": false,
+  "semantic_inference_tested": false,
+  "official_moulinette_tested": false
+}

@@ -1,0 +1,117 @@
+[
+  {
+    "file": ".flake8",
+    "bytes": 73,
+    "sha256": "103908d1c1fa31ad6b527d966475f35c21b265ec447c2890bfb3f6699076768c"
+  },
+  {
+    "file": ".gitignore",
+    "bytes": 280,
+    "sha256": "bf00b16f250c9605c1be217aa2aecaf461d311b8557eb983b493b2a06bc83ca5"
+  },
+  {
+    "file": ".python-version",
+    "bytes": 5,
+    "sha256": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d"
+  },
+  {
+    "file": "ARCHITECTURE.md",
+    "bytes": 5195,
+    "sha256": "a46d385760dce11fdf3668529bb4954267d6b7eeb902ab5c50fd50436c364888"
+  },
+  {
+    "file": "MOULINETTE.md",
+    "bytes": 2496,
+    "sha256": "24093c9155afe2ecd85b5bf71d8f65470c426995adda343fe1c148b2722a4129"
+  },
+  {
+    "file": "Makefile",
+    "bytes": 700,
+    "sha256": "c775086c5593bc57b171c97f4740a7c47bdedb92e3d56f9c91eccc2ecccec807"
+  },
+  {
+    "file": "README.md",
+    "bytes": 14846,
+    "sha256": "71792aba7fc65573f9d219e2b2fcc5fa507ad776601ac5ad2bd0ef74a0970050"
+  },
+  {
+    "file": "pyproject.toml",
+    "bytes": 1068,
+    "sha256": "f98adf393dd5e17ee0d1858ad1b3aa90c31e9dc93e7fc012f6a5f4bef2f3d451"
+  },
+  {
+    "file": "src/__init__.py",
+    "bytes": 73,
+    "sha256": "1056d15485a69a20d7b327fd1d8a5e50e00a76adf7a691ba8da707d61ebbb022"
+  },
+  {
+    "file": "src/__main__.py",
+    "bytes": 234,
+    "sha256": "cd928a46fe7a9690c6d165e2710d48fea3640f91ef25e026cf5d468f61f1aa6c"
+  },
+  {
+    "file": "src/bm25.py",
+    "bytes": 4880,
+    "sha256": "14889dfd7e4bb95c2956c52a91176f18d9e2a9945e72acb492d3fe670846637a"
+  },
+  {
+    "file": "src/chunking.py",
+    "bytes": 9459,
+    "sha256": "f7a5585ff6dc649243f3f098f32695eab9a9b6e018a5cd0e54aa032be95586da"
+  },
+  {
+    "file": "src/cli.py",
+    "bytes": 13011,
+    "sha256": "03f8e3d46fd55cfcfd287458b86a616821077c5d441477bd27d2429c549a9e14"
+  },
+  {
+    "file": "src/corpus.py",
+    "bytes": 2195,
+    "sha256": "fff36d32d3e0cb8cc0c4acb909b9ae3a7122ee98959fe9e5a25a25a7f360c001"
+  },
+  {
+    "file": "src/embeddings.py",
+    "bytes": 5429,
+    "sha256": "26c8d2b65b6edc796bf228cc5db90f3b3dd3126e6caa8cf6a115183c1986cba3"
+  },
+  {
+    "file": "src/evaluation.py",
+    "bytes": 3114,
+    "sha256": "51a3dab0b3b51946ba8679ce64b94ce6f2299dc21b23d08fba44017102503de6"
+  },
+  {
+    "file": "src/generator.py",
+    "bytes": 6616,
+    "sha256": "c9fe56315ecfabac63ee6b8a5584dd353d53b61c6c7464d48e879346717c72dc"
+  },
+  {
+    "file": "src/indexer.py",
+    "bytes": 7800,
+    "sha256": "ab928b617464651230d13dc82eccb4b01fa771c6e741228f2293e7a9cf7d582f"
+  },
+  {
+    "file": "src/models.py",
+    "bytes": 2803,
+    "sha256": "0512c63bc84d21641a2a7be112c5f12474654810773480b7325a75c47eac5320"
+  },
+  {
+    "file": "src/retriever.py",
+    "bytes": 5659,
+    "sha256": "a954b76998a09c02dbe332a8a6d91fd7f3b6c686dc8394373b669c74fec346bf"
+  },
+  {
+    "file": "src/text_processing.py",
+    "bytes": 2699,
+    "sha256": "a728fbcc6dae7ee0e86ddfe2aecf04c6a96d01588360a63e8337638f293cc309"
+  },
+  {
+    "file": "tests/test_pipeline.py",
+    "bytes": 4014,
+    "sha256": "6ed3dbc9847dc23f5aad96a55e0afe064128b37150b4dcf055572e23d2bf68ea"
+  },
+  {
+    "file": "uv.lock",
+    "bytes": 402091,
+    "sha256": "410d02d277a5596808f84cc0ea779b206479a442a146e740f9a187f92bfcbebb"
+  }
+]
