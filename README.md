@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by <login>.*
+*This project has been created as part of the 42 curriculum by eanass.*
 
 # RAG against the machine — reorganized teaching version
 
