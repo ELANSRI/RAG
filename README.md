@@ -19,6 +19,9 @@ preserved rather than claimed as new inventions.
 Use Python 3.10+ and uv. `.python-version` selects 3.12 for development.
 Dependencies and the original lockfile are retained. Linux uses CPU torch wheels.
 Prepare enough disk space for dependencies and local model weights.
+Answer generation stores Hugging Face model files in `.cache/huggingface`
+inside this project by default, avoiding small home-directory quotas. Set
+`RAG_MODEL_CACHE=/path/to/cache` to use another location.
 
 ```bash
 uv sync

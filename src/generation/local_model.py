@@ -1,6 +1,8 @@
 """Lazy local inference with Qwen; no weights are needed for search."""
 
+import os
 import re
+from pathlib import Path
 from typing import Any, Sequence
 
 from src.documents.files import PassageReader
@@ -9,6 +11,17 @@ from .context import ContextComposer
 
 DEFAULT_MODEL = "Qwen/Qwen3-0.6B"
 NO_EVIDENCE = "I could not find sufficient evidence in the retrieved sources."
+
+
+def _model_cache_dir() -> str:
+    """Use a configurable cache with a repository-local fallback."""
+    configured = os.environ.get("RAG_MODEL_CACHE")
+    if configured:
+        return configured
+    hf_home = os.environ.get("HF_HOME")
+    if hf_home:
+        return str(Path(hf_home) / "hub")
+    return str(Path(__file__).resolve().parents[2] / ".cache" / "huggingface")
 
 
 class LocalResponder:
@@ -45,8 +58,13 @@ class LocalResponder:
                 if torch.cuda.is_available()
                 else "mps" if torch.backends.mps.is_available() else "cpu"
             )
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_id)
-        self.network = AutoModelForCausalLM.from_pretrained(self.model_id)
+        cache_dir = _model_cache_dir()
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            self.model_id, cache_dir=cache_dir
+        )
+        self.network = AutoModelForCausalLM.from_pretrained(
+            self.model_id, cache_dir=cache_dir
+        )
         self.network.to(self.device)
         self.network.eval()
 
